@@ -11,7 +11,7 @@ using namespace std;
 
 struct SocInfo {
     string plyrNme;//Player name
-    unsigned short plyrNum,ptsScrd;//Player's Number and Number of points scored
+    short plyrNum,ptsScrd;//Player's Number and Number of points scored
 };
 
 

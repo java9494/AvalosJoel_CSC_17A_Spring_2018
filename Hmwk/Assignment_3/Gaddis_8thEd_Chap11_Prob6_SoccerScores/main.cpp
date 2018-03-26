@@ -7,6 +7,7 @@
  
  //System Libraries
 #include <iostream>
+#include <iomanip>
 
 #include "SocInfo.h"
 using namespace std;
@@ -18,33 +19,37 @@ using namespace std;
 
 //Function Prototypes
 void info(SocInfo [],const int);
-void dsplay(SocInfo [],const int);
+short ttlPts(SocInfo [],const int);
+int maxPts(SocInfo [],const int);
+void dsplay(SocInfo [],const int,short,int);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
     
     //Declare Variables
     const int NUMPLY=12;//12 players on the team.
-    SocInfo player[NUMPLY];
+    short ttlPt;
+    int posMax;//Position of player with max points.
+    SocInfo player[NUMPLY];//Array of structures
     
     //Initialize Variables
-    cout<<"Soccer Team Data Program"<<endl;
-    cout<<"------------------------"<<endl;
-    cout<<"Welcome! Enter in the information for each player."<<endl;
     info(player,NUMPLY);
     
     //Process/Map inputs to outputs
+    ttlPt=ttlPts(player,NUMPLY);
+    posMax=maxPts(player,NUMPLY);
     
     //output data
-    cout<<"Soccer Team Information:"<<endl;
-    cout<<"------------------------"<<endl;
-    dsplay(player,NUMPLY);
+    dsplay(player,NUMPLY,ttlPt,posMax);
             
     //Exit stage right!
     return 0;
 }
 
 void info(SocInfo player[], const int NUMPLY){
+    cout<<"Soccer Team Data Program"<<endl;
+    cout<<"------------------------"<<endl;
+    cout<<"Welcome! Enter in the information for each player."<<endl;
     for (int count=0;count<NUMPLY;count++){
         cout<<"Enter in the name for player #"<<count+1<<endl;
         getline(cin,player[count].plyrNme);
@@ -52,21 +57,46 @@ void info(SocInfo player[], const int NUMPLY){
         cin>>player[count].plyrNum;
         if (player[count].plyrNum<0){
             cout<<"Error, cannot accept a negative value. Ending program...\n";
-            exit;
+            exit(0);
         }
         cout<<"Enter in the points scored by "<<player[count].plyrNme<<endl;
         cin>>player[count].ptsScrd;
         if (player[count].ptsScrd<0){
             cout<<"Error, cannot accept a negative value. Ending program...\n";
-            exit;
+            exit(0);
         }
         cin.ignore();       
     }
 }
 
-void dsplay(SocInfo player[],const int NUMPLY){
-    cout<<"Player "<<"     "<<"Number "<<"      "<<"Points Scored"<<endl;
+short ttlPts(SocInfo player[],const int NUMPLY){
+    short ttlPts=0;
     for (int count=0;count<NUMPLY;count++){
-        cout<<player[count].plyrNme<<" "<<player[count].plyrNum<<" "<<player[count].ptsScrd<<endl;
+        ttlPts+=player[count].ptsScrd;
     }
+    return ttlPts;
+}
+
+int maxPts(SocInfo player[],const int NUMPLY){//Find person with most points
+    short max=player[0].ptsScrd;
+    int pos=0;
+    for (int count=0;count<NUMPLY;count++){
+        if (max<=player[count].ptsScrd){
+            max=player[count].ptsScrd;
+            pos=count;
+            //cout<<pos<<endl;
+        }
+    }
+    return pos;
+}
+
+void dsplay(SocInfo player[],const int NUMPLY,short ttl,int pos){
+    cout<<"Soccer Team Information:"<<endl;
+    cout<<"------------------------"<<endl;
+    cout<<"Player "<<"     "<<"Number "<<"    "<<"Points Scored"<<endl;
+    for (int count=0;count<NUMPLY;count++){
+        cout<<player[count].plyrNme<<setw(10)<<" "<<player[count].plyrNum<<setw(10)<<" "<<player[count].ptsScrd<<endl;
+    }
+    cout<<"Total Points Scored by Team = "<<ttl<<" points."<<endl;
+    cout<<"The person on the team who scored the most points was: "<<player[pos].plyrNme<<"."<<endl;
 }
