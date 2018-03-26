@@ -1,1 +1,3 @@
-build/Debug/Cygwin-Windows/main.o: main.cpp
+build/Debug/Cygwin-Windows/main.o: main.cpp WthrDta.h
+
+WthrDta.h:
