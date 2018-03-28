@@ -40,7 +40,7 @@ void prntAry(const Array &a){
     cout<<endl;
     for(int i=0;i<a.getRows();i++){
         for (int j=0;j<a.getCols();j++){
-            cout<<a.getData(i)(j)<<" ";
+            cout<<a.getData(i,j)<<" ";
         }
         cout<<endl;
     }

@@ -14,7 +14,7 @@ class Array{
         int **data;
     public:
         Array(int,int);
-        ~Array(){delete []data;}
+        ~Array();
         int getData(int,int)const;
         int getRows()const{return rows;}
         int getCols()const{return cols;}
