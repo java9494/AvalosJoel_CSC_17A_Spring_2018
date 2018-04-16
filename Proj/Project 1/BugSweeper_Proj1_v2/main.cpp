@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Joel Avalos
- * Created on April 10, 2018, 3:17 PM
+ * Created on April 10, 2018, 6:25 PM
  * Purpose: Create a full version of MineSweeper, using concepts from 
  * Chapter 9-12 of Gaddis.
  * v1: Created structures to condense game variables into.
@@ -17,6 +17,7 @@
 #include <vector>
 
 #include "GStates.h"
+#include "GmeGrid.h"
 using namespace std;
 
 //User Libraries
@@ -24,21 +25,22 @@ using namespace std;
 //Global Constants - Math/Physics Constants, Conversions,
 //                   2-D Array Dimensions
 const int COLS=10;//Constant for the number of columns in the 2-D Array
+const int COLS2=15;//Constant for the number of columns in pro setting Grid
 
 //Function Prototypes
-void random(int [][COLS],int = 6);//Function to randomize each spot on grid.
-void bugTest(int [][COLS],bool[][COLS],int);//Function to test whether a spot is a bug.
-int nbrBug(bool [][COLS],int);//Function to calculate number of Bugs on grid
+void random(GmeGrid [][COLS],int);//Function to randomize each spot on grid.
+void bugTest(GmeGrid [][COLS],int);//Function to test whether a spot is a bug.
+int nbrBug(GmeGrid [][COLS],int);//Function to calculate number of Bugs on grid
                             //A well as to activate Bug spaces.
-void nbrBug(int [][COLS],bool [][COLS],int);//Function to calculate neighboring bugs around each space
+void nbrBugs(GmeGrid [][COLS],int);//Function to calculate neighboring bugs around each space
 void start (string);//Function to run the game's Start Menu
-void game(int [][COLS],bool [][COLS],char [][COLS],int [][COLS],
+void game(GmeGrid [][COLS],
         int,char,int,int,bool,bool,int &,int &,string,bool [],vector<bool>,int);//Function to run the game
-void cleared(int [][COLS],bool[][COLS],char[][COLS],int [][COLS],
+void cleared(GmeGrid [][COLS],
         int,char,int,int,bool &,bool &,int &,int &,string,bool [],vector<bool>,int);//Function to clear each user-inputted space
-void display(int [][COLS],char [][COLS],int);//Function for displaying the grid.
+void display(GmeGrid [][COLS],int);//Function for displaying the grid.
 int dffclty();
-void rules(int [][COLS],int);//Function for displaying the Rules of the game.
+void rules(GmeGrid [][COLS],int);//Function for displaying the Rules of the game.
 bool scoreKp();//Function for keeping records
 void savRecs(int &,int,string,bool [],vector<bool>,int);//Function for saving records
 void exit();//Function to exit the program
@@ -51,8 +53,7 @@ int main(int argc, char** argv) {
     //Declaring Game, Grid, and Array Variables
     string title;//Game title
     const int ROWS=6;//Rows in the grid.
-    int spots[ROWS][COLS];//Grid
-    bool isitBug[ROWS][COLS];//Bug or not
+    GmeGrid grid[ROWS][COLS];
     int nBugs;//The total number of bugs in the game
     const int MXGAMES=100;//Max number of games to record keep is 100
     bool gamesW[MXGAMES];//Array to hold number of games won
@@ -60,11 +61,8 @@ int main(int argc, char** argv) {
     int gameNum=0;//Count of how many games user has played
     int totGame;//Total games played
     int dff=2;//Game difficulty variable set to default setting
-    
-    //Declaring Display Variables
-    char clrDsp[ROWS][COLS];//What a space will display after being cleared.
-    int nbrBugs[ROWS][COLS];//The number of bugs neighboring a space on the grid
-    
+    int **proGrid=nullptr;//Pointer used to allocate memory for a bigger grid
+ 
     //Declaring User-inputted Variables
     char row;//User-inputted choice for the row that the space they want to clear is in
     int spot;//User-inputted choice for the space they want to clear
@@ -78,44 +76,48 @@ int main(int argc, char** argv) {
     title="BugSweeper";//Title of Game!
     ifstream inFile;
     inFile.open("totGame.txt");
-    inFile>>totGame; 
-    
-    //Initializing random numbers and display values
-    random(spots);//Call random function to randomize the grid
-    for (int x=0;x<ROWS;x++){//Loop to set each space's initial Bug value to false
-        for (int y=0;y<COLS;y++){
-            isitBug[x][y]=false;
-        }
-    }
-    for (int x=0;x<ROWS;x++){//Loop to set each space's initial display to an X
-        for (int y=0;y<COLS;y++){
-            clrDsp[x][y]='X';
-        }
-    }
-    for (int x=0;x<MXGAMES;x++)//Loop to set game wins to false
-        gamesW[x]=false;
-    
-    //Initializing the Bugs
-    bugTest(spots,isitBug,ROWS);//Call the bugTest function to arm bugs
-    nBugs=nbrBug(isitBug,ROWS);//Call nBug function to add up the total number of bugs in the game.
-        /*for (int x=0;x<ROWS;x++){//Loop to display the grid with bug locations for debugging purposes
-        for (int y=0;y<COLS;y++){
-            cout<<isitBug[x][y]<<" ";
-            if (y==9)
-                cout<<endl;
-        }
-    }*/
+    inFile>>totGame;    
        
     //Start Menu
     start(title);//Call start menu function
     cin>>in;//Ask user for input
     switch (in){//This is the switch case for the menu
-        case 1: 
-                game(spots,isitBug,clrDsp,nbrBugs,ROWS,row,spot,nBugs,gmeStrt.gameWin,gmeStrt.gameLss,
+        case 1:
+            if (dff==2){
+                //Initializing random numbers and display values
+                random(grid,ROWS);//Call random function to randomize the grid
+                for (int x=0;x<ROWS;x++){//Loop to set each space's initial Bug value to false
+                    for (int y=0;y<COLS;y++){
+                        grid[x][y].isitBug=false;
+                    }
+                }
+                for (int x=0;x<ROWS;x++){//Loop to set each space's initial display to an X
+                    for (int y=0;y<COLS;y++){
+                        grid[x][y].clrDsp='X';
+                    }
+                }
+            }
+            for (int x=0;x<MXGAMES;x++)//Loop to set game wins to false
+                gamesW[x]=false;
+            /*if (dff=3){
+                proGrid = new int[][COLS2];
+            }*/
+    
+            //Initializing the Bugs
+            bugTest(grid,ROWS);//Call the bugTest function to arm bugs
+            nBugs=nbrBug(grid,ROWS);//Call nBug function to add up the total number of bugs in the game.
+                /*for (int x=0;x<ROWS;x++){//Loop to display the grid with bug locations for debugging purposes
+                for (int y=0;y<COLS;y++){
+                    cout<<isitBug[x][y]<<" ";
+                    if (y==9)
+                        cout<<endl;
+                }
+            }*/
+                game(grid,ROWS,row,spot,nBugs,gmeStrt.gameWin,gmeStrt.gameLss,
                 totGame,gameNum,name,gamesW,gamesL,MXGAMES);//Run game
-        break;
+            break;
         case 2: dff=dffclty();break;//Difficulty modifier
-        case 3: rules(spots,ROWS);break;//Display rules
+        case 3: rules(grid,ROWS);break;//Display rules
         case 4: gmeStrt.scores=scoreKp();//Option to keep records
         if (gmeStrt.scores){
         cout<<"Please enter a name."<<endl;
@@ -130,31 +132,31 @@ int main(int argc, char** argv) {
     return 0;
 }
     
-void random(int grid[][COLS],int rows){//Randomizing the grid.
+void random(GmeGrid grid[][COLS],int rows){//Randomizing the grid.
     for (int x=0;x<rows;x++){
         for (int y=0;y<COLS;y++){
-            grid[x][y]=rand();//Going through every element in array to randomize
+            grid[x][y].spots=rand();//Going through every element in array to randomize
         }
     }
 }
 
-void bugTest(int spot[][COLS],bool bug[][COLS],int rows){//Testing each space for bugs.
+void bugTest(GmeGrid grid[][COLS],int rows){//Testing each space for bugs.
     for (int x=0;x<rows;x++){
         for (int y=0;y<COLS;y++){
-            if (spot[x][y]%3==0){//Bug criteria: if the random number
+            if (grid[x][y].spots%3==0){//Bug criteria: if the random number
                                  //Assigned to a space is cleanly divisible by 3
                                  //(no remainder), then that space is a bug
-                bug[x][y]=true;//Set bug test to true       
+                grid[x][y].isitBug=true;//Set bug test to true       
             }
         }
     }
 }
 
-int nbrBug(bool bug[][COLS],int rows){//Adding up the number of bugs on the grid
+int nbrBug(GmeGrid grid[][COLS],int rows){//Adding up the number of bugs on the grid
     int nbugs=0;
     for (int x=0;x<rows;x++){
         for (int y=0;y<COLS;y++){
-            if (bug[x][y]==true){//Checking bool value for bug
+            if (grid[x][y].isitBug==true){//Checking bool value for bug
                 nbugs++;//Counting number of bugs for the win condition
             }
         }
@@ -162,195 +164,195 @@ int nbrBug(bool bug[][COLS],int rows){//Adding up the number of bugs on the grid
     return nbugs;
 }
 
-void nbrBug(int nbrBugs[][COLS],bool bug[][COLS],int rows){//Testing neighboring
+void nbrBugs(GmeGrid grid[][COLS],int rows){//Testing neighboring
                                                             //spaces on grid for bugs
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 0 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][1]==true)
+        if (grid[0+x][1].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][0]==true)&&(x!=5))
+        if ((grid[1+x][0].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][1]==true)&&(x!=5))
+        if ((grid[1+x][1].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][0]==true)&&(x!=0))
+        if ((grid[x-1][0].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][1]==true)&&(x!=0))
+        if ((grid[x-1][1].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][0]=nbrBug;
+        grid[x][0].isitBug=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 1 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][0]==true)
+        if (grid[0+x][0].isitBug==true)
             nbrBug++;
-        if (bug[0+x][2]==true)
+        if (grid[0+x][2].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][1]==true)&&(x!=5))
+        if ((grid[1+x][1].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][0]==true)&&(x!=5))
+        if ((grid[1+x][0].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][2]==true)&&(x!=5))
+        if ((grid[1+x][2].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][0]==true)&&(x!=0))
+        if ((grid[x-1][0].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][1]==true)&&(x!=0))
+        if ((grid[x-1][1].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][2]==true)&&(x!=0))
+        if ((grid[x-1][2].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][1]=nbrBug;
+        grid[x][1].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 2 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][1]==true)
+        if (grid[0+x][1].isitBug==true)
             nbrBug++;
-        if (bug[0+x][3]==true)
+        if (grid[0+x][3].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][1]==true)&&(x!=5))
+        if ((grid[1+x][1].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][2]==true)&&(x!=5))
+        if ((grid[1+x][2].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][3]==true)&&(x!=5))
+        if ((grid[1+x][3].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][1]==true)&&(x!=0))
+        if ((grid[x-1][1].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][2]==true)&&(x!=0))
+        if ((grid[x-1][2].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][3]==true)&&(x!=0))
+        if ((grid[x-1][3].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][2]=nbrBug;
+        grid[x][2].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 3 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][2]==true)
+        if (grid[0+x][2].isitBug==true)
             nbrBug++;
-        if (bug[0+x][4]==true)
+        if (grid[0+x][4].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][2]==true)&&(x!=5))
+        if ((grid[1+x][2].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][3]==true)&&(x!=5))
+        if ((grid[1+x][3].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][4]==true)&&(x!=5))
+        if ((grid[1+x][4].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][2]==true)&&(x!=0))
+        if ((grid[x-1][2].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][3]==true)&&(x!=0))
+        if ((grid[x-1][3].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][4]==true)&&(x!=0))
+        if ((grid[x-1][4].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][3]=nbrBug;
+        grid[x][3].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 4 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][3]==true)
+        if (grid[0+x][3].isitBug==true)
             nbrBug++;
-        if (bug[0+x][5]==true)
+        if (grid[0+x][5].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][3]==true)&&(x!=5))
+        if ((grid[1+x][3].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][4]==true)&&(x!=5))
+        if ((grid[1+x][4].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][5]==true)&&(x!=5))
+        if ((grid[1+x][5].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][3]==true)&&(x!=0))
+        if ((grid[x-1][3].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][4]==true)&&(x!=0))
+        if ((grid[x-1][4].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][5]==true)&&(x!=0))
+        if ((grid[x-1][5].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][4]=nbrBug;
+        grid[x][4].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 5 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][4]==true)
+        if (grid[0+x][4].isitBug==true)
             nbrBug++;
-        if (bug[0+x][6]==true)
+        if (grid[0+x][6].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][4]==true)&&(x!=5))
+        if ((grid[1+x][4].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][5]==true)&&(x!=5))
+        if ((grid[1+x][5].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][6]==true)&&(x!=5))
+        if ((grid[1+x][6].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][4]==true)&&(x!=0))
+        if ((grid[x-1][4].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][5]==true)&&(x!=0))
+        if ((grid[x-1][5].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][6]==true)&&(x!=0))
+        if ((grid[x-1][6].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][5]=nbrBug;
+        grid[x][5].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 6 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][5]==true)
+        if (grid[0+x][5].isitBug==true)
             nbrBug++;
-        if (bug[0+x][7]==true)
+        if (grid[0+x][7].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][5]==true)&&(x!=5))
+        if ((grid[1+x][5].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][6]==true)&&(x!=5))
+        if ((grid[1+x][6].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][7]==true)&&(x!=5))
+        if ((grid[1+x][7].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][5]==true)&&(x!=0))
+        if ((grid[x-1][5].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][6]==true)&&(x!=0))
+        if ((grid[x-1][6].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][7]==true)&&(x!=0))
+        if ((grid[x-1][7].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][6]=nbrBug;
+        grid[x][6].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 7 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][6]==true)
+        if (grid[0+x][6].isitBug==true)
             nbrBug++;
-        if (bug[0+x][8]==true)
+        if (grid[0+x][8].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][6]==true)&&(x!=5))
+        if ((grid[1+x][6].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][7]==true)&&(x!=5))
+        if ((grid[1+x][7].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][8]==true)&&(x!=5))
+        if ((grid[1+x][8].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][6]==true)&&(x!=0))
+        if ((grid[x-1][6].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][7]==true)&&(x!=0))
+        if ((grid[x-1][7].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][8]==true)&&(x!=0))
+        if ((grid[x-1][8].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][7]=nbrBug;
+        grid[x][7].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 8 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][7]==true)
+        if (grid[0+x][7].isitBug==true)
             nbrBug++;
-        if (bug[0+x][9]==true)
+        if (grid[0+x][9].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][7]==true)&&(x!=5))
+        if ((grid[1+x][7].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][8]==true)&&(x!=5))
+        if ((grid[1+x][8].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][9]==true)&&(x!=5))
+        if ((grid[1+x][9].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][7]==true)&&(x!=0))
+        if ((grid[x-1][7].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][8]==true)&&(x!=0))
+        if ((grid[x-1][8].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][9]==true)&&(x!=0))
+        if ((grid[x-1][9].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][8]=nbrBug;
+        grid[x][8].nbrBugs=nbrBug;
     }
     for (int x=0;x<rows;x++){//Testing neighboring spaces of column 9 spaces for bugs
         int nbrBug=0;
-        if (bug[0+x][8]==true)
+        if (grid[0+x][8].isitBug==true)
             nbrBug++;
-        if ((bug[1+x][8]==true)&&(x!=5))
+        if ((grid[1+x][8].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[1+x][9]==true)&&(x!=5))
+        if ((grid[1+x][9].isitBug==true)&&(x!=5))
             nbrBug++;
-        if ((bug[x-1][8]==true)&&(x!=0))
+        if ((grid[x-1][8].isitBug==true)&&(x!=0))
             nbrBug++;
-        if ((bug[x-1][9]==true)&&(x!=0))
+        if ((grid[x-1][9].isitBug==true)&&(x!=0))
             nbrBug++;
-        nbrBugs[x][9]=nbrBug;
+        grid[x][9].nbrBugs=nbrBug;
     }
 }
 
@@ -365,116 +367,116 @@ void start(string title) {//Displaying start menu to user
     cout<<"5. Quit"<<endl;
 }
 
-void game(int grid[][COLS],bool bug[][COLS],char spDsply[][COLS],int nbrBug[][COLS],//Game function
+void game(GmeGrid grid[][COLS],//Game function
           int rows,char row,int spot,int nbugs,bool lose,bool win,int &totGame,
           int &gameNum,string name,bool gamesW[],vector<bool> gamesL,int size){
     while(lose!=true&&win!=true){
-    display(grid,spDsply,rows);
+    display(grid,rows);
     cout<<"Enter in a spot to clear."<<endl;
     cin>>row>>spot;
-    cleared(grid,bug,spDsply,nbrBug,rows,row,spot,nbugs,lose,win,totGame,gameNum,name,gamesW,gamesL,size);
+    cleared(grid,rows,row,spot,nbugs,lose,win,totGame,gameNum,name,gamesW,gamesL,size);
     }
 }
 
-void cleared(int grid[][COLS],bool bug[][COLS],char spDsply[][COLS],int nbrBugs[][COLS],//Clearing a space function
+void cleared(GmeGrid grid[][COLS],//Clearing a space function
              int rows,char row,int spot,int nbugs,bool &lose,bool &win,int &totGame,
              int &gameNum, string name,bool gamesW[],vector<bool> gamesL,int size){
-    nbrBug(nbrBugs,bug,rows);//Calling nbrBugs function to calculate display values
+    nbrBugs(grid,rows);//Calling nbrBugs function to calculate display values
     static int cleared=0;//Static local variable for number of spaces the user has cleared
     if (row=='A'){
-        if (bug[0][spot-1]==true){
-            spDsply[0][spot-1]='B';
+        if (grid[0][spot-1].isitBug==true){
+            grid[0][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;           
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[0][spot-1]=48+nbrBugs[0][spot-1];
+            grid[0][spot-1].clrDsp=48+grid[0][spot-1].nbrBugs;
         }
     }
     if (row=='B'){
-        if (bug[1][spot-1]==true){
-            spDsply[1][spot-1]='B';
+        if (grid[1][spot-1].isitBug==true){
+            grid[1][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;  
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[1][spot-1]=48+nbrBugs[1][spot-1];
+            grid[1][spot-1].clrDsp=48+grid[1][spot-1].nbrBugs;
         }
     }
     if (row=='C'){
-        if (bug[2][spot-1]==true){
-            spDsply[2][spot-1]='B';
+        if (grid[2][spot-1].isitBug==true){
+            grid[2][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;  
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[2][spot-1]=48+nbrBugs[2][spot-1];
+            grid[2][spot-1].clrDsp=48+grid[2][spot-1].nbrBugs;
         }
     }
     if (row=='D'){
-        if (bug[3][spot-1]==true){
-            spDsply[3][spot-1]='B';
+        if (grid[3][spot-1].isitBug==true){
+            grid[3][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;  
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[3][spot-1]=48+nbrBugs[3][spot-1];
+            grid[3][spot-1].clrDsp=48+grid[3][spot-1].nbrBugs;
         }
     }
     if (row=='E'){
-        if (bug[4][spot-1]==true){
-            spDsply[4][spot-1]='B';
+        if (grid[4][spot-1].isitBug==true){
+            grid[4][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;  
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[4][spot-1]=48+nbrBugs[4][spot-1];
+            grid[4][spot-1].clrDsp=48+grid[4][spot-1].nbrBugs;
         }
     }
     if (row=='F'){
-        if (bug[5][spot-1]==true){
-            spDsply[5][spot-1]='B';
+        if (grid[5][spot-1].isitBug==true){
+            grid[5][spot-1].clrDsp='B';
             lose=true;
             gameNum++;
             gamesL[gameNum]=true;  
             totGame++;
-            display(grid,spDsply,rows);
+            display(grid,rows);
             cout<<"BUG. YOU LOST."<<endl;
             savRecs(totGame,gameNum,name,gamesW,gamesL,size);
         }
         else {
             cleared++;
-            spDsply[5][spot-1]=48+nbrBugs[5][spot-1];
+            grid[5][spot-1].clrDsp=48+grid[5][spot-1].nbrBugs;
         }
     }
     if ((cleared+nbugs)==60){//The win condition of the game
@@ -484,15 +486,15 @@ void cleared(int grid[][COLS],bool bug[][COLS],char spDsply[][COLS],int nbrBugs[
         gamesW[gameNum]=true;
         totGame++;
         savRecs(totGame,gameNum,name,gamesW,gamesL,size);
-        display(grid,spDsply,rows);
+        display(grid,rows);
         cout<<"Congratulations! You have cleared all the bugs. Hooray!!!"<<endl;
     }
 }
 
-void display(int grid[][COLS],char spDsply[][COLS],int rows){//Function to display grid.
+void display(GmeGrid grid[][COLS],int rows){//Function to display grid.
     for (int x=0;x<rows;x++) {
         for (int y=0;y<COLS;y++){
-            cout<<spDsply[x][y]<<" ";
+            cout<<grid[x][y].clrDsp<<" ";
         if (y==9)
             cout<<endl;
         }   
@@ -500,8 +502,10 @@ void display(int grid[][COLS],char spDsply[][COLS],int rows){//Function to displ
 }
 
 int dffclty(){
-    int dffclt=2;//Difficulty for the game
-    cout<<"Select a difficulty to change to."<<endl;
+    static int dffclt=2;//Difficulty for the game
+    cout<<"The difficulty is currently "<<dffclt<<"."<<endl;
+    cout<<"Select a difficulty to change to:"<<endl;
+    cout<<"---------------------------------"<<endl;
     cout<<"1 - Newbie"<<endl;
     cout<<"2 - Amateur (Default)"<<endl;
     cout<<"3 - Professional"<<endl;
@@ -513,7 +517,7 @@ int dffclty(){
     return dffclt;
 }
 
-void rules(int grid[][COLS],int rows){//Function to display rules.
+void rules(GmeGrid grid[][COLS],int rows){//Function to display rules.
     cout<<"Rules"<<endl;
     cout<<"-----"<<endl;
     cout<<"  1 2 3 4 5 6 7 8 9 10"<<endl;
