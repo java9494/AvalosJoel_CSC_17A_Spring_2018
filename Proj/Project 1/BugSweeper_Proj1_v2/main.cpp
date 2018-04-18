@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
     int gameNum=0;//Count of how many games user has played
     int totGame;//Total games played
     int dff=2;//Game difficulty variable set to default setting
-    int **proGrid=nullptr;//Pointer used to allocate memory for a bigger grid
+    int **proGrid;//Pointer used to allocate memory for a bigger grid
  
     //Declaring User-inputted Variables
     char row;//User-inputted choice for the row that the space they want to clear is in
