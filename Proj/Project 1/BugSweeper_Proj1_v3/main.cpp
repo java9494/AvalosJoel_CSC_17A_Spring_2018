@@ -1,11 +1,12 @@
 /* 
  * File:   main.cpp
  * Author: Joel Avalos
- * Created on April 10, 2018, 6:25 PM
+ * Created on April 22, 2018, 1:13 PM
  * Purpose: Create a full version of MineSweeper, using concepts from 
  * Chapter 9-12 of Gaddis.
  * v1: Created structures to condense game variables into.
  * v2: Created a difficulty modifier using 2-D pointers.
+ * v3: Used binary reading/writing and string library functions.
  */
  
 //System Libraries
