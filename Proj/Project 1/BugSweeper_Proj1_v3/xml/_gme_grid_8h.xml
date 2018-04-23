@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_gme_grid_8h" kind="file" language="C++">
+    <compoundname>GmeGrid.h</compoundname>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>GmeGrid.h</label>
+        <link refid="_gme_grid_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_gme_grid" prot="public">GmeGrid</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>GmeGrid.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Joel<sp/>Avalos</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Purpose:<sp/>Create<sp/>a<sp/>structure<sp/>for<sp/>grid<sp/>variables.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>April<sp/>15,<sp/>2018,<sp/>6:55<sp/>PM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GMEGRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMEGRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_gme_grid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_gme_grid" kindref="compound">GmeGrid</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="struct_gme_grid_1a20203c469d9555ef5bf202d135ae4116" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_gme_grid_1a20203c469d9555ef5bf202d135ae4116" kindref="member">spots</ref>;</highlight><highlight class="comment">//Grid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_gme_grid_1ac5777a1adbc4318f9b1ffbf2493e1046" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_gme_grid_1ac5777a1adbc4318f9b1ffbf2493e1046" kindref="member">isitBug</ref>;</highlight><highlight class="comment">//Bug<sp/>or<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="struct_gme_grid_1a4eb15bb45e302b3bc3ad17108bacf347" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_gme_grid_1a4eb15bb45e302b3bc3ad17108bacf347" kindref="member">clrDsp</ref>;</highlight><highlight class="comment">//What<sp/>a<sp/>space<sp/>will<sp/>display<sp/>after<sp/>being<sp/>cleared.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_gme_grid_1a9bf7ade294e936efd7da7c058c82da2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_gme_grid_1a9bf7ade294e936efd7da7c058c82da2d" kindref="member">nbrBugs</ref>;</highlight><highlight class="comment">//The<sp/>number<sp/>of<sp/>bugs<sp/>neighboring<sp/>a<sp/>space<sp/>on<sp/>the<sp/>grid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GMEGRID_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="GmeGrid.h"/>
+  </compounddef>
+</doxygen>

@@ -6,7 +6,7 @@
  * Chapter 9-12 of Gaddis.
  * v1: Created structures to condense game variables into.
  * v2: Created a difficulty modifier using 2-D pointers.
- * v3: Used binary reading/writing and string library functions.
+ * v3: Added reading/writing concepts and string library functions.
  */
  
 //System Libraries
@@ -16,9 +16,11 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
+#include <cctype>
 
 #include "GStates.h"
 #include "GmeGrid.h"
+#include "GmeStat.h"
 using namespace std;
 
 //User Libraries
@@ -58,6 +60,7 @@ int main(int argc, char** argv) {
     const int ROWS=6;//Rows in the grid.
     GmeGrid grid[ROWS][COLS];//Structure for default game grid
     GmeGrid xtraGrd[ROWS][COLS1];//Structure for newbie and exta pro spaces grid
+    GmeStat gamest = {0,0,0,0,0};
     int nBugs;//The total number of bugs in the game
     const int MXGAMES=100;//Max number of games to record keep is 100
     bool gamesW[MXGAMES];//Array to hold number of games won
@@ -80,10 +83,10 @@ int main(int argc, char** argv) {
     //Initializing Variables
     GStates gmeStrt;
     title="BugSweeper";//Title of Game!
-    ifstream inFile;
+    ifstream inFile;    
     inFile.open("totGame.txt");
-    inFile>>totGame;    
-       
+    inFile>>totGame;
+    
     //Start Menu
     start(title);//Call start menu function
     cin>>in;//Ask user for input
@@ -252,7 +255,7 @@ void nbrBugs(GmeGrid grid[][COLS],int rows,GmeGrid xtraGrd[][COLS1],int dff){//T
                 nbrBug++;
             if ((xtraGrd[x-1][1].isitBug==true)&&(x!=0))
                 nbrBug++;
-            xtraGrd[x][0].isitBug=nbrBug;
+            xtraGrd[x][0].nbrBugs=nbrBug;
         }
         for (int x=0;x<rows;x++){//Testing neighboring spaces of column 1 spaces for bugs
             int nbrBug=0;
@@ -342,7 +345,7 @@ void nbrBugs(GmeGrid grid[][COLS],int rows,GmeGrid xtraGrd[][COLS1],int dff){//T
                 nbrBug++;
             if ((grid[x-1][1].isitBug==true)&&(x!=0))
                 nbrBug++;
-            grid[x][0].isitBug=nbrBug;
+            grid[x][0].nbrBugs=nbrBug;
         }
         for (int x=0;x<rows;x++){//Testing neighboring spaces of column 1 spaces for bugs
             int nbrBug=0;
@@ -634,7 +637,15 @@ void game(GmeGrid grid[][COLS],//Game function
     while(lose!=true&&win!=true){
     display(grid,rows,xtraGrd,dff);
     cout<<"Enter in a spot to clear."<<endl;
-    cin>>row>>spot;
+    cin>>row>>spot; 
+    while (toupper(row)!='A'&&toupper(row)!='B'&&toupper(row) !='C'&&toupper(row)!='D'&&toupper(row)!='E'&&toupper(row)!='F'){//Validating input
+        cout<<"Not a valid input for row, please enter a row A-F"<<endl;
+        cin>>row>>spot;
+    }
+    if (islower(row)){//Converting lowercase row inputs to upper case
+        row=toupper(row);
+    }
+    cout<<row<<endl;
     cleared(grid,rows,row,spot,nbugs,lose,win,totGame,gameNum,name,gamesW,gamesL,size,proGrid,xtraGrd,dff);
     } 
 }
@@ -645,7 +656,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
              int **proGrid,GmeGrid xtraGrd[][COLS1],int dff){
     nbrBugs(grid,rows,xtraGrd,dff);//Calling nbrBugs function to calculate display values
     static int cleared=0;//Static local variable for number of spaces the user has cleared
-    if (row=='A'){
+    if (row=='A'||toupper(row)=='A'){
         if (dff==1){
             if (xtraGrd[0][spot-1].isitBug==true){
             xtraGrd[0][spot-1].clrDsp='B';
@@ -696,7 +707,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
             }
         }
     }
-    if (row=='B'){
+    if (row=='B'||toupper(row)=='B'){
         if (dff==1){
             if (xtraGrd[1][spot-1].isitBug==true){
             xtraGrd[1][spot-1].clrDsp='B';
@@ -747,7 +758,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
             }
         }
     }
-    if (row=='C'){
+    if (row=='C'||toupper(row)=='C'){
         if (dff==1){
             if (xtraGrd[2][spot-1].isitBug==true){
             xtraGrd[2][spot-1].clrDsp='B';
@@ -798,7 +809,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
             }
         }
     }
-    if (row=='D'){
+    if (row=='D'||toupper(row)=='D'){
         if (dff==1){
             if (xtraGrd[3][spot-1].isitBug==true){
             xtraGrd[3][spot-1].clrDsp='B';
@@ -849,7 +860,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
             }
         }
     }
-    if (row=='E'){
+    if (row=='E'||toupper(row)=='E'){
         if (dff==1){
             if (xtraGrd[4][spot-1].isitBug==true){
             xtraGrd[4][spot-1].clrDsp='B';
@@ -900,7 +911,7 @@ void cleared(GmeGrid grid[][COLS],//Clearing a space function
             }
         }
     }
-    if (row=='F'){
+    if (row=='F'||toupper(row)=='F'){
         if (dff==1){
             if (xtraGrd[5][spot-1].isitBug==true){
             xtraGrd[5][spot-1].clrDsp='B';
@@ -1083,6 +1094,8 @@ void savRecs(int &totGame,int gameNum,string name,bool gamesW[],vector<bool> gam
         outfile<<"------------------"<<endl;
         outfile<<name<<endl;
         outfile<<"---------"<<endl;
+        outfile<<fixed;
+        outfile<<setprecision(2);
         outfile<<"Games won                     = "<<wins<<endl;
         outfile<<"Games lost                    = "<<losses<<endl;
         outfile<<"Total Games You Played        = "<<gameNum<<endl;

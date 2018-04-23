@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cpp__standard__headers__indexer_8cpp" kind="file" language="C++">
+    <compoundname>cpp_standard_headers_indexer.cpp</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">csignal</includes>
+    <includes local="no">csetjmp</includes>
+    <includes local="no">cstdarg</includes>
+    <includes local="no">typeinfo</includes>
+    <includes local="no">bitset</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">new</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">climits</includes>
+    <includes local="no">cfloat</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">cerrno</includes>
+    <includes local="no">cctype</includes>
+    <includes local="no">cwctype</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">cwchar</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">list</includes>
+    <includes local="no">set</includes>
+    <includes local="no">map</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">valarray</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">iosfwd</includes>
+    <includes local="no">ios</includes>
+    <includes local="no">istream</includes>
+    <includes local="no">ostream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">strstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">streambuf</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">locale</includes>
+    <includes local="no">clocale</includes>
+    <includes local="no">ciso646</includes>
+    <incdepgraph>
+      <node id="72">
+        <label>list</label>
+      </node>
+      <node id="94">
+        <label>locale</label>
+      </node>
+      <node id="81">
+        <label>valarray</label>
+      </node>
+      <node id="48">
+        <label>csetjmp</label>
+      </node>
+      <node id="91">
+        <label>iomanip</label>
+      </node>
+      <node id="52">
+        <label>functional</label>
+      </node>
+      <node id="76">
+        <label>queue</label>
+      </node>
+      <node id="60">
+        <label>limits</label>
+      </node>
+      <node id="78">
+        <label>iterator</label>
+      </node>
+      <node id="90">
+        <label>strstream</label>
+      </node>
+      <node id="68">
+        <label>cwchar</label>
+      </node>
+      <node id="79">
+        <label>cmath</label>
+      </node>
+      <node id="63">
+        <label>cassert</label>
+      </node>
+      <node id="62">
+        <label>stdexcept</label>
+      </node>
+      <node id="82">
+        <label>numeric</label>
+      </node>
+      <node id="69">
+        <label>string</label>
+      </node>
+      <node id="49">
+        <label>cstdarg</label>
+      </node>
+      <node id="74">
+        <label>map</label>
+      </node>
+      <node id="59">
+        <label>cfloat</label>
+      </node>
+      <node id="61">
+        <label>exception</label>
+      </node>
+      <node id="88">
+        <label>fstream</label>
+      </node>
+      <node id="86">
+        <label>ostream</label>
+      </node>
+      <node id="84">
+        <label>ios</label>
+      </node>
+      <node id="50">
+        <label>typeinfo</label>
+      </node>
+      <node id="93">
+        <label>cstdio</label>
+      </node>
+      <node id="51">
+        <label>bitset</label>
+      </node>
+      <node id="54">
+        <label>ctime</label>
+      </node>
+      <node id="75">
+        <label>stack</label>
+      </node>
+      <node id="70">
+        <label>vector</label>
+      </node>
+      <node id="92">
+        <label>streambuf</label>
+      </node>
+      <node id="96">
+        <label>ciso646</label>
+      </node>
+      <node id="56">
+        <label>new</label>
+      </node>
+      <node id="53">
+        <label>utility</label>
+      </node>
+      <node id="89">
+        <label>sstream</label>
+      </node>
+      <node id="45">
+        <label>nbproject/private/cpp_standard_headers_indexer.cpp</label>
+        <link refid="cpp__standard__headers__indexer_8cpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>iosfwd</label>
+      </node>
+      <node id="64">
+        <label>cerrno</label>
+      </node>
+      <node id="46">
+        <label>cstdlib</label>
+      </node>
+      <node id="95">
+        <label>clocale</label>
+      </node>
+      <node id="65">
+        <label>cctype</label>
+      </node>
+      <node id="87">
+        <label>iostream</label>
+      </node>
+      <node id="55">
+        <label>cstddef</label>
+      </node>
+      <node id="71">
+        <label>deque</label>
+      </node>
+      <node id="58">
+        <label>climits</label>
+      </node>
+      <node id="66">
+        <label>cwctype</label>
+      </node>
+      <node id="47">
+        <label>csignal</label>
+      </node>
+      <node id="73">
+        <label>set</label>
+      </node>
+      <node id="80">
+        <label>complex</label>
+      </node>
+      <node id="77">
+        <label>algorithm</label>
+      </node>
+      <node id="67">
+        <label>cstring</label>
+      </node>
+      <node id="57">
+        <label>memory</label>
+      </node>
+      <node id="85">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DO<sp/>NOT<sp/>ALTER<sp/>OR<sp/>REMOVE<sp/>COPYRIGHT<sp/>NOTICES<sp/>OR<sp/>THIS<sp/>HEADER.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016<sp/>Oracle<sp/>and/or<sp/>its<sp/>affiliates.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Oracle<sp/>and<sp/>Java<sp/>are<sp/>registered<sp/>trademarks<sp/>of<sp/>Oracle<sp/>and/or<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Other<sp/>names<sp/>may<sp/>be<sp/>trademarks<sp/>of<sp/>their<sp/>respective<sp/>owners.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>The<sp/>contents<sp/>of<sp/>this<sp/>file<sp/>are<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>either<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>General<sp/>Public<sp/>License<sp/>Version<sp/>2<sp/>only<sp/>(&quot;GPL&quot;)<sp/>or<sp/>the<sp/>Common</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Development<sp/>and<sp/>Distribution<sp/>License(&quot;CDDL&quot;)<sp/>(collectively,<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>License.<sp/>You<sp/>can<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>http://www.netbeans.org/cddl-gplv2.html</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>or<sp/>nbbuild/licenses/CDDL-GPL-2-CP.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License.<sp/><sp/>When<sp/>distributing<sp/>the<sp/>software,<sp/>include<sp/>this<sp/>License<sp/>Header</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Notice<sp/>in<sp/>each<sp/>file<sp/>and<sp/>include<sp/>the<sp/>License<sp/>file<sp/>at</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>nbbuild/licenses/CDDL-GPL-2-CP.<sp/><sp/>Oracle<sp/>designates<sp/>this</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>particular<sp/>file<sp/>as<sp/>subject<sp/>to<sp/>the<sp/>&quot;Classpath&quot;<sp/>exception<sp/>as<sp/>provided</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>by<sp/>Oracle<sp/>in<sp/>the<sp/>GPL<sp/>Version<sp/>2<sp/>section<sp/>of<sp/>the<sp/>License<sp/>file<sp/>that</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>accompanied<sp/>this<sp/>code.<sp/>If<sp/>applicable,<sp/>add<sp/>the<sp/>following<sp/>below<sp/>the</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>License<sp/>Header,<sp/>with<sp/>the<sp/>fields<sp/>enclosed<sp/>by<sp/>brackets<sp/>[]<sp/>replaced<sp/>by</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>your<sp/>own<sp/>identifying<sp/>information:</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>&quot;Portions<sp/>Copyrighted<sp/>[year]<sp/>[name<sp/>of<sp/>copyright<sp/>owner]&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>If<sp/>you<sp/>wish<sp/>your<sp/>version<sp/>of<sp/>this<sp/>file<sp/>to<sp/>be<sp/>governed<sp/>by<sp/>only<sp/>the<sp/>CDDL</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>or<sp/>only<sp/>the<sp/>GPL<sp/>Version<sp/>2,<sp/>indicate<sp/>your<sp/>decision<sp/>by<sp/>adding</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>&quot;[Contributor]<sp/>elects<sp/>to<sp/>include<sp/>this<sp/>software<sp/>in<sp/>this<sp/>distribution</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>[CDDL<sp/>or<sp/>GPL<sp/>Version<sp/>2]<sp/>license.&quot;<sp/>If<sp/>you<sp/>do<sp/>not<sp/>indicate<sp/>a</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>single<sp/>choice<sp/>of<sp/>license,<sp/>a<sp/>recipient<sp/>has<sp/>the<sp/>option<sp/>to<sp/>distribute</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>your<sp/>version<sp/>of<sp/>this<sp/>file<sp/>under<sp/>either<sp/>the<sp/>CDDL,<sp/>the<sp/>GPL<sp/>Version<sp/>2<sp/>or</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>to<sp/>extend<sp/>the<sp/>choice<sp/>of<sp/>license<sp/>to<sp/>its<sp/>licensees<sp/>as<sp/>provided<sp/>above.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>However,<sp/>if<sp/>you<sp/>add<sp/>GPL<sp/>Version<sp/>2<sp/>code<sp/>and<sp/>therefore,<sp/>elected<sp/>the<sp/>GPL</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>Version<sp/>2<sp/>license,<sp/>then<sp/>the<sp/>option<sp/>applies<sp/>only<sp/>if<sp/>the<sp/>new<sp/>code<sp/>is</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>made<sp/>subject<sp/>to<sp/>such<sp/>option<sp/>by<sp/>the<sp/>copyright<sp/>holder.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>Contributor(s):</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>standard<sp/>headers<sp/>was<sp/>taken<sp/>in<sp/>http://en.cppreference.com/w/cpp/header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>General<sp/>purpose<sp/>utilities:<sp/>program<sp/>control,<sp/>dynamic<sp/>memory<sp/>allocation,<sp/>random<sp/>numbers,<sp/>sort<sp/>and<sp/>search</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;csignal&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functions<sp/>and<sp/>macro<sp/>constants<sp/>for<sp/>signal<sp/>management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;csetjmp&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Macro<sp/>(and<sp/>function)<sp/>that<sp/>saves<sp/>(and<sp/>jumps)<sp/>to<sp/>an<sp/>execution<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdarg&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handling<sp/>of<sp/>variable<sp/>length<sp/>argument<sp/>lists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Runtime<sp/>type<sp/>information<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bitset&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::bitset<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>objects,<sp/>designed<sp/>for<sp/>use<sp/>with<sp/>the<sp/>standard<sp/>algorithms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Various<sp/>utility<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C-style<sp/>time/date<sp/>utilites</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>typedefs<sp/>for<sp/>types<sp/>such<sp/>as<sp/>size_t,<sp/>NULL<sp/>and<sp/>others</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;new&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Low-level<sp/>memory<sp/>management<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Higher<sp/>level<sp/>memory<sp/>management<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;climits&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>limits<sp/>of<sp/>integral<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cfloat&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>limits<sp/>of<sp/>float<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>standardized<sp/>way<sp/>to<sp/>query<sp/>properties<sp/>of<sp/>arithmetic<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exception<sp/>handling<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>exception<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Conditionally<sp/>compiled<sp/>macro<sp/>that<sp/>compares<sp/>its<sp/>argument<sp/>to<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cerrno&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Macro<sp/>containing<sp/>the<sp/>last<sp/>error<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>functions<sp/>to<sp/>determine<sp/>the<sp/>type<sp/>contained<sp/>in<sp/>character<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cwctype&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>functions<sp/>for<sp/>determining<sp/>the<sp/>type<sp/>of<sp/>wide<sp/>character<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>various<sp/>narrow<sp/>character<sp/>string<sp/>handling<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cwchar&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>various<sp/>wide<sp/>and<sp/>multibyte<sp/>string<sp/>handling<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_string<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::vector<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::deque<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::list<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::set<sp/>and<sp/>std::multiset<sp/>associative<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::map<sp/>and<sp/>std::multimap<sp/>associative<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::stack<sp/>container<sp/>adaptor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::queue<sp/>and<sp/>std::priority_queue<sp/>container<sp/>adaptors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Algorithms<sp/>that<sp/>operate<sp/>on<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Container<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Common<sp/>mathematics<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;complex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Complex<sp/>number<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;valarray&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Class<sp/>for<sp/>representing<sp/>and<sp/>manipulating<sp/>arrays<sp/>of<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Numeric<sp/>operations<sp/>on<sp/>values<sp/>in<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iosfwd&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>forward<sp/>declarations<sp/>of<sp/>all<sp/>classes<sp/>in<sp/>the<sp/>input/output<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ios&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::ios_base<sp/>class,<sp/>std::basic_ios<sp/>class<sp/>template<sp/>and<sp/>several<sp/>typedefs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;istream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_istream<sp/>class<sp/>template<sp/>and<sp/>several<sp/>typedefs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_ostream,<sp/>std::basic_iostream<sp/>class<sp/>templates<sp/>and<sp/>several<sp/>typedefs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>several<sp/>standard<sp/>stream<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_fstream,<sp/>std::basic_ifstream,<sp/>std::basic_ofstream<sp/>class<sp/>templates<sp/>and<sp/>several<sp/>typedefs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_stringstream,<sp/>std::basic_istringstream,<sp/>std::basic_ostringstream<sp/>class<sp/>templates<sp/>and<sp/>several<sp/>typedefs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;strstream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::strstream,<sp/>std::istrstream,<sp/>std::ostrstream(deprecated)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>functions<sp/>to<sp/>control<sp/>the<sp/>format<sp/>or<sp/>input<sp/>and<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;streambuf&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::basic_streambuf<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C-style<sp/>input-output<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;locale&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Localization<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;clocale&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C<sp/>localization<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ciso646&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty<sp/>header.<sp/>The<sp/>macros<sp/>that<sp/>appear<sp/>in<sp/>iso646.h<sp/>in<sp/>C<sp/>are<sp/>keywords<sp/>in<sp/>C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeindex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::type_index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Compile-time<sp/>type<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>C++<sp/>time<sp/>utilites</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;initializer_list&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::initializer_list<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::tuple<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;scoped_allocator&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Nested<sp/>allocator<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>fixed-size<sp/>types<sp/>and<sp/>limits<sp/>of<sp/>other<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cinttypes&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>formatting<sp/>macros<sp/>,<sp/>intmax_t<sp/>and<sp/>uintmax_t<sp/>math<sp/>and<sp/>conversions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;system_error&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>defines<sp/>std::error_code,<sp/>a<sp/>platform-dependent<sp/>error<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuchar&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>C-style<sp/>Unicode<sp/>character<sp/>conversion<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::array<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;forward_list&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::forward_list<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::unordered_set<sp/>and<sp/>std::unordered_multiset<sp/>unordered<sp/>associative<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::unordered_map<sp/>and<sp/>std::unordered_multimap<sp/>unordered<sp/>associative<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Random<sp/>number<sp/>generators<sp/>and<sp/>distributions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ratio&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Compile-time<sp/>rational<sp/>arithmetic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cfenv&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Floating-point<sp/>environment<sp/>access<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;codecvt&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Unicode<sp/>conversion<sp/>facilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;regex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Classes,<sp/>algorithms<sp/>and<sp/>iterators<sp/>to<sp/>support<sp/>regular<sp/>expression<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>Atomic<sp/>operations<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ccomplex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)(deprecated<sp/>in<sp/>C++17)<sp/><sp/><sp/>simply<sp/>includes<sp/>the<sp/>header<sp/>&lt;complex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctgmath&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)(deprecated<sp/>in<sp/>C++17)<sp/><sp/><sp/>simply<sp/>includes<sp/>the<sp/>headers<sp/>&lt;ccomplex&gt;<sp/>(until<sp/>C++17)&lt;complex&gt;<sp/>(since<sp/>C++17)<sp/>and<sp/>&lt;cmath&gt;:<sp/>the<sp/>overloads<sp/>equivalent<sp/>to<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>C<sp/>header<sp/>tgmath.h<sp/>are<sp/>already<sp/>provided<sp/>by<sp/>those<sp/>headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdalign&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)(deprecated<sp/>in<sp/>C++17)<sp/><sp/><sp/>defines<sp/>one<sp/>compatibility<sp/>macro<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdbool&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)(deprecated<sp/>in<sp/>C++17)<sp/><sp/><sp/>defines<sp/>one<sp/>compatibility<sp/>macro<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>std::thread<sp/>class<sp/>and<sp/>supporting<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>mutual<sp/>exclusion<sp/>primitives</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;future&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/><sp/><sp/>primitives<sp/>for<sp/>asynchronous<sp/>computations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++11)<sp/><sp/>thread<sp/>waiting<sp/>conditions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201300L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;shared_mutex&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++14)<sp/><sp/><sp/><sp/>shared<sp/>mutual<sp/>exclusion<sp/>primitives</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201500L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;any&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>std::any<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>std::optional<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>std::variant<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory_resource&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>Polymorphic<sp/>allocators<sp/>and<sp/>memory<sp/>resources</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>std::basic_string_view<sp/>class<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;execution&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>Predefined<sp/>execution<sp/>policies<sp/>for<sp/>parallel<sp/>versions<sp/>of<sp/>the<sp/>algorithms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(since<sp/>C++17)<sp/><sp/><sp/><sp/>std::path<sp/>class<sp/>and<sp/>supporting<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="nbproject/private/cpp_standard_headers_indexer.cpp"/>
+  </compounddef>
+</doxygen>

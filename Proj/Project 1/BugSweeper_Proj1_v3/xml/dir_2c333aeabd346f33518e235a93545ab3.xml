@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_2c333aeabd346f33518e235a93545ab3" kind="dir">
+    <compoundname>nbproject</compoundname>
+    <innerdir refid="dir_f23a14af306a253ec22f027bb70b8c4d">nbproject/private</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="nbproject/"/>
+  </compounddef>
+</doxygen>

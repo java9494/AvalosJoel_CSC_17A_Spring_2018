@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_gme_stat_8h" kind="file" language="C++">
+    <compoundname>GmeStat.h</compoundname>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <invincdepgraph>
+      <node id="8">
+        <label>GmeStat.h</label>
+        <link refid="_gme_stat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_gme_stat" prot="public">GmeStat</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>GmeStat.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Joel<sp/>Avalos</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Purpose:<sp/>Game<sp/>statistics<sp/>and<sp/>records</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>April<sp/>18,<sp/>2018,<sp/>10:48<sp/>AM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GMESTAT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMESTAT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_gme_stat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_gme_stat" kindref="compound">GmeStat</ref>{</highlight></codeline>
+<codeline lineno="12" refid="struct_gme_stat_1a782b9fb8694aa1bbded45914c26ffcd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_gme_stat_1a782b9fb8694aa1bbded45914c26ffcd3" kindref="member">totGame</ref>;</highlight></codeline>
+<codeline lineno="13" refid="struct_gme_stat_1ae7095273da851cc846b74d830c1d6009" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_gme_stat_1ae7095273da851cc846b74d830c1d6009" kindref="member">totLoss</ref>;</highlight></codeline>
+<codeline lineno="14" refid="struct_gme_stat_1a9c18dee97b01ea74985ca9fd5f34c573" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_gme_stat_1a9c18dee97b01ea74985ca9fd5f34c573" kindref="member">totWon</ref>;</highlight></codeline>
+<codeline lineno="15" refid="struct_gme_stat_1a6d7bd3ec07c85e43f0d0d801645de16d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_gme_stat_1a6d7bd3ec07c85e43f0d0d801645de16d" kindref="member">pctWon</ref>;</highlight></codeline>
+<codeline lineno="16" refid="struct_gme_stat_1a381330d98723b7990209e8e9170b7e02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_gme_stat_1a381330d98723b7990209e8e9170b7e02" kindref="member">pctLost</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GMESTAT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="GmeStat.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_gme_grid" kind="struct" language="C++" prot="public">
+    <compoundname>GmeGrid</compoundname>
+    <includes refid="_gme_grid_8h" local="no">GmeGrid.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_gme_grid_1a20203c469d9555ef5bf202d135ae4116" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GmeGrid::spots</definition>
+        <argsstring></argsstring>
+        <name>spots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GmeGrid.h" line="12" column="1" bodyfile="GmeGrid.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_gme_grid_1ac5777a1adbc4318f9b1ffbf2493e1046" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GmeGrid::isitBug</definition>
+        <argsstring></argsstring>
+        <name>isitBug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GmeGrid.h" line="13" column="1" bodyfile="GmeGrid.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_gme_grid_1a4eb15bb45e302b3bc3ad17108bacf347" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char GmeGrid::clrDsp</definition>
+        <argsstring></argsstring>
+        <name>clrDsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GmeGrid.h" line="14" column="1" bodyfile="GmeGrid.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_gme_grid_1a9bf7ade294e936efd7da7c058c82da2d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GmeGrid::nbrBugs</definition>
+        <argsstring></argsstring>
+        <name>nbrBugs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GmeGrid.h" line="15" column="1" bodyfile="GmeGrid.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GmeGrid.h" line="11" column="1" bodyfile="GmeGrid.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_gme_grid_1a4eb15bb45e302b3bc3ad17108bacf347" prot="public" virt="non-virtual"><scope>GmeGrid</scope><name>clrDsp</name></member>
+      <member refid="struct_gme_grid_1ac5777a1adbc4318f9b1ffbf2493e1046" prot="public" virt="non-virtual"><scope>GmeGrid</scope><name>isitBug</name></member>
+      <member refid="struct_gme_grid_1a9bf7ade294e936efd7da7c058c82da2d" prot="public" virt="non-virtual"><scope>GmeGrid</scope><name>nbrBugs</name></member>
+      <member refid="struct_gme_grid_1a20203c469d9555ef5bf202d135ae4116" prot="public" virt="non-virtual"><scope>GmeGrid</scope><name>spots</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

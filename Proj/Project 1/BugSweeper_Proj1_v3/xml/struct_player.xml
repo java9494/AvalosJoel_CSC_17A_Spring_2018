@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_player" kind="struct" language="C++" prot="public">
+    <compoundname>Player</compoundname>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_player_1acf0355128a99ee20ad9931b760fb2de1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Player::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.h" line="13" column="1" bodyfile="Player.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1ad3bbcf40156b9bb420ca9e8763fa7a5b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_gme_stat" kindref="compound">GmeStat</ref></type>
+        <definition>GmeStat Player::Scores</definition>
+        <argsstring></argsstring>
+        <name>Scores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.h" line="14" column="1" bodyfile="Player.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>GmeStat</label>
+        <link refid="struct_gme_stat"/>
+      </node>
+      <node id="7">
+        <label>Player</label>
+        <link refid="struct_player"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Scores</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Player.h" line="12" column="1" bodyfile="Player.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_player_1acf0355128a99ee20ad9931b760fb2de1" prot="public" virt="non-virtual"><scope>Player</scope><name>name</name></member>
+      <member refid="struct_player_1ad3bbcf40156b9bb420ca9e8763fa7a5b" prot="public" virt="non-virtual"><scope>Player</scope><name>Scores</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,7 +3,7 @@ BugSweeper Records
 
 ---------
 Games won                     = 0
-Games lost                    = 1
-Total Games You Played        = 1
+Games lost                    = 10
+Total Games You Played        = 10
 Your Average                  = 0%
-Total Games Played Altogether = 58
+Total Games Played Altogether = 69
