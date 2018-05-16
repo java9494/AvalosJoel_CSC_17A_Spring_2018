@@ -6,7 +6,6 @@
  */
 
 #include <iostream>
-#include <cstdlib>
 #include "DayYear.h"
 
 using namespace std;
@@ -21,6 +20,7 @@ void DayYear::setDate(DayYear day,int d){
     }
     day.date=d;
 }
+
 void DayYear::print(DayYear day, int d){
     int month;
     if (d<=31){//january
