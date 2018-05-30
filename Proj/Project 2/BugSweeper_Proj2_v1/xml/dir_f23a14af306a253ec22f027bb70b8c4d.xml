@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_f23a14af306a253ec22f027bb70b8c4d" kind="dir">
+    <compoundname>nbproject/private</compoundname>
+    <innerfile refid="c__standard__headers__indexer_8c">c_standard_headers_indexer.c</innerfile>
+    <innerfile refid="cpp__standard__headers__indexer_8cpp">cpp_standard_headers_indexer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="nbproject/private/"/>
+  </compounddef>
+</doxygen>

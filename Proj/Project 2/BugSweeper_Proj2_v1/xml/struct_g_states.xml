@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_g_states" kind="struct" language="C++" prot="public">
+    <compoundname>GStates</compoundname>
+    <includes refid="_g_states_8h" local="no">GStates.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_states_1a48c29e2c2b79232ef5174465b2a8665b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GStates::gameWin</definition>
+        <argsstring></argsstring>
+        <name>gameWin</name>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GStates.h" line="12" column="1" bodyfile="GStates.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_states_1af6cd6c34da65324f19b7020595686281" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GStates::gameLss</definition>
+        <argsstring></argsstring>
+        <name>gameLss</name>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GStates.h" line="13" column="1" bodyfile="GStates.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_states_1a8cf484a995ae032b5077397a071ee5cb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GStates::scores</definition>
+        <argsstring></argsstring>
+        <name>scores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GStates.h" line="14" column="1" bodyfile="GStates.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GStates.h" line="11" column="1" bodyfile="GStates.h" bodystart="11" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_g_states_1af6cd6c34da65324f19b7020595686281" prot="public" virt="non-virtual"><scope>GStates</scope><name>gameLss</name></member>
+      <member refid="struct_g_states_1a48c29e2c2b79232ef5174465b2a8665b" prot="public" virt="non-virtual"><scope>GStates</scope><name>gameWin</name></member>
+      <member refid="struct_g_states_1a8cf484a995ae032b5077397a071ee5cb" prot="public" virt="non-virtual"><scope>GStates</scope><name>scores</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

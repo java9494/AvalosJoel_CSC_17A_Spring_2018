@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_g_states_8h" kind="file" language="C++">
+    <compoundname>GStates.h</compoundname>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <invincdepgraph>
+      <node id="11">
+        <label>GStates.h</label>
+        <link refid="_g_states_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_g_states" prot="public">GStates</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>GStates.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Joel<sp/>Avalos</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Purpose:<sp/>To<sp/>create<sp/>a<sp/>structure<sp/>that<sp/>will<sp/>hold<sp/>game<sp/>state<sp/>variables<sp/>and<sp/>functions.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>April<sp/>14,<sp/>2018,<sp/>6:21<sp/>PM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GSTATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GSTATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_g_states" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_g_states" kindref="compound">GStates</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="struct_g_states_1a48c29e2c2b79232ef5174465b2a8665b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_g_states_1a48c29e2c2b79232ef5174465b2a8665b" kindref="member">gameWin</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight><highlight class="comment">//Win<sp/>condition<sp/>of<sp/>the<sp/>game</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_g_states_1af6cd6c34da65324f19b7020595686281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_g_states_1af6cd6c34da65324f19b7020595686281" kindref="member">gameLss</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight><highlight class="comment">//Losing<sp/>condition<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="struct_g_states_1a8cf484a995ae032b5077397a071ee5cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_g_states_1a8cf484a995ae032b5077397a071ee5cb" kindref="member">scores</ref>;</highlight><highlight class="comment">//Flag<sp/>for<sp/>score-keeping</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GSTATES_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="GStates.h"/>
+  </compounddef>
+</doxygen>

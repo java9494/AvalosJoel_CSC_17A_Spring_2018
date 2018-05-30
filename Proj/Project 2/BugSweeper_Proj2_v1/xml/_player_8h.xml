@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_player_8h" kind="file" language="C++">
+    <compoundname>Player.h</compoundname>
+    <innerclass refid="struct_player" prot="public">Player</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>Player.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>rcc</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Purpose:<sp/>Create<sp/>a<sp/>Player<sp/>structure,<sp/>for<sp/>record<sp/>keeping</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>April<sp/>18,<sp/>2018,<sp/>10:46<sp/>AM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="struct_player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_player" kindref="compound">Player</ref>{</highlight></codeline>
+<codeline lineno="13" refid="struct_player_1acf0355128a99ee20ad9931b760fb2de1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="struct_player_1acf0355128a99ee20ad9931b760fb2de1" kindref="member">name</ref>;</highlight><highlight class="comment">//Name<sp/>of<sp/>the<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="struct_player_1ad3bbcf40156b9bb420ca9e8763fa7a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_gme_stat" kindref="compound">GmeStat</ref><sp/><ref refid="struct_player_1ad3bbcf40156b9bb420ca9e8763fa7a5b" kindref="member">Scores</ref>;</highlight><highlight class="comment">//Stats<sp/>for<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PLAYER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Player.h"/>
+  </compounddef>
+</doxygen>

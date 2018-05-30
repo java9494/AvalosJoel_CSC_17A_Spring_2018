@@ -1,0 +1,9 @@
+BugSweeper Records
+------------------
+
+---------
+Games won                     = 0
+Games lost                    = 1
+Total Games You Played        = 1
+Your Average                  = 0.00%
+Total Games Played Altogether = 158

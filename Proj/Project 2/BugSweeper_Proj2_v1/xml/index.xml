@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="struct_gme_grid" kind="struct"><name>GmeGrid</name>
+    <member refid="struct_gme_grid_1a20203c469d9555ef5bf202d135ae4116" kind="variable"><name>spots</name></member>
+    <member refid="struct_gme_grid_1ac5777a1adbc4318f9b1ffbf2493e1046" kind="variable"><name>isitBug</name></member>
+    <member refid="struct_gme_grid_1a4eb15bb45e302b3bc3ad17108bacf347" kind="variable"><name>clrDsp</name></member>
+    <member refid="struct_gme_grid_1a9bf7ade294e936efd7da7c058c82da2d" kind="variable"><name>nbrBugs</name></member>
+  </compound>
+  <compound refid="struct_gme_stat" kind="struct"><name>GmeStat</name>
+    <member refid="struct_gme_stat_1a782b9fb8694aa1bbded45914c26ffcd3" kind="variable"><name>totGame</name></member>
+    <member refid="struct_gme_stat_1ae7095273da851cc846b74d830c1d6009" kind="variable"><name>totLoss</name></member>
+    <member refid="struct_gme_stat_1a9c18dee97b01ea74985ca9fd5f34c573" kind="variable"><name>totWon</name></member>
+    <member refid="struct_gme_stat_1a6d7bd3ec07c85e43f0d0d801645de16d" kind="variable"><name>pctWon</name></member>
+    <member refid="struct_gme_stat_1a381330d98723b7990209e8e9170b7e02" kind="variable"><name>pctLost</name></member>
+  </compound>
+  <compound refid="struct_g_states" kind="struct"><name>GStates</name>
+    <member refid="struct_g_states_1a48c29e2c2b79232ef5174465b2a8665b" kind="variable"><name>gameWin</name></member>
+    <member refid="struct_g_states_1af6cd6c34da65324f19b7020595686281" kind="variable"><name>gameLss</name></member>
+    <member refid="struct_g_states_1a8cf484a995ae032b5077397a071ee5cb" kind="variable"><name>scores</name></member>
+  </compound>
+  <compound refid="struct_player" kind="struct"><name>Player</name>
+    <member refid="struct_player_1acf0355128a99ee20ad9931b760fb2de1" kind="variable"><name>name</name></member>
+    <member refid="struct_player_1ad3bbcf40156b9bb420ca9e8763fa7a5b" kind="variable"><name>Scores</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_8dep_8inc" kind="file"><name>.dep.inc</name>
+  </compound>
+  <compound refid="main_8o_8d" kind="file"><name>main.o.d</name>
+  </compound>
+  <compound refid="_gme_grid_8h" kind="file"><name>GmeGrid.h</name>
+  </compound>
+  <compound refid="_gme_stat_8h" kind="file"><name>GmeStat.h</name>
+  </compound>
+  <compound refid="_g_states_8h" kind="file"><name>GStates.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a2cc9d6742e0b7f9f0ab68704db31d96c" kind="variable"><name>COLS1</name></member>
+    <member refid="main_8cpp_1abfdc2552f8ab882b4380b2a56cdff54f" kind="variable"><name>COLS</name></member>
+    <member refid="main_8cpp_1a2aea3e373c8cdc0cf36c69f1a8100f11" kind="function"><name>random</name></member>
+    <member refid="main_8cpp_1ac7399508c1e377458d6216a43c8a1dae" kind="function"><name>bugTest</name></member>
+    <member refid="main_8cpp_1a8c354984247bdea5fcb3fa185b358f2e" kind="function"><name>nbrBug</name></member>
+    <member refid="main_8cpp_1a8d60e4eea13b3eeec25871e27b8858ca" kind="function"><name>nbrBugs</name></member>
+    <member refid="main_8cpp_1ab60d56e5bd4570f9c115e5227d5e250b" kind="function"><name>start</name></member>
+    <member refid="main_8cpp_1a2a212ccd41d6b32897c8c71bce77b9e3" kind="function"><name>start</name></member>
+    <member refid="main_8cpp_1a1bae1576554d6ec527663c79e98ae0f1" kind="function"><name>game</name></member>
+    <member refid="main_8cpp_1a8a52915f53329573b0fe418a4b75ba7a" kind="function"><name>cleared</name></member>
+    <member refid="main_8cpp_1afaf557d376c4471f5a4738170e860f12" kind="function"><name>display</name></member>
+    <member refid="main_8cpp_1abdf1d5e1cccf87fd86cf07e6d881aaf5" kind="function"><name>dffclty</name></member>
+    <member refid="main_8cpp_1a338ab9ba55fcf6f8ad764dc6f20cf6ca" kind="function"><name>rules</name></member>
+    <member refid="main_8cpp_1a31f71484d6ceb6c6c045a1ae70d1bb0f" kind="function"><name>scoreKp</name></member>
+    <member refid="main_8cpp_1a9d681cbf7efccb7143cb5c71d27e45ca" kind="function"><name>savRecs</name></member>
+    <member refid="main_8cpp_1a358d2e2397ca11ccd17553e3c40e7901" kind="function"><name>exit</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="c__standard__headers__indexer_8c" kind="file"><name>c_standard_headers_indexer.c</name>
+  </compound>
+  <compound refid="cpp__standard__headers__indexer_8cpp" kind="file"><name>cpp_standard_headers_indexer.cpp</name>
+  </compound>
+  <compound refid="_player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>build</name>
+  </compound>
+  <compound refid="dir_5aa0f545e3a098f50edcb27c1cb11f25" kind="dir"><name>build/Debug/Cygwin-Windows</name>
+  </compound>
+  <compound refid="dir_fd7da27072e1ba382b32f9c507e53144" kind="dir"><name>build/Debug</name>
+  </compound>
+  <compound refid="dir_2c333aeabd346f33518e235a93545ab3" kind="dir"><name>nbproject</name>
+  </compound>
+  <compound refid="dir_f23a14af306a253ec22f027bb70b8c4d" kind="dir"><name>nbproject/private</name>
+  </compound>
+</doxygenindex>
